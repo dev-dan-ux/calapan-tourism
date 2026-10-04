@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Destinations - Calapan Tourism</title>
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="https://fonts.googleapis.com" rel="preconnect"><link href="https://fonts.gstatic.com" rel="preconnect" crossorigin><link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Poppins:wght@300;400;500;600;700&family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/css/main.css" rel="stylesheet">
+  <script src="assets/js/app.js"></script>
+  <script src="assets/js/data.js"></script>
+  
+</head>
+<body class="index-page">
+
+
+    <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+      <a href="index.html" class="logo d-flex align-items-center">
+        <h1 class="sitename">Calapan Tourism</h1>
+      </a>
+      <nav id="navmenu" class="navmenu">
+        <ul>
+        <li><a href="index.html" class="">Home</a></li>
+        <li><a href="about.html" class="">About</a></li>
+        <li><a href="destinations.html" class="active">Destinations</a></li>
+        <li><a href="gallery.html" class="">Gallery</a></li>
+        <li><a href="blog.html" class="">Help</a></li>
+        <li><a href="contact.html" class="">Contact</a></li>
+          <li id="nav-auth"></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+    </div>
+  </header>
+  <script>CT.renderNav();</script>
+  <style>
+    .btn-login, .btn-register { padding: 8px 20px; font-weight: 600; }
+    .btn-login { color: #667eea; }
+    .btn-register { color: white; border: none; }
+    .navmenu a.active { color: #ff2a00ff; font-weight: 700; border-bottom: 2px solid #ff2a00ff; }
+  </style>
+
+
+  <main class="main">
+
+    <!-- Page Title -->
+    <div class="page-title dark-background" style="background-image: url(assets/img/travel/destination.jpg)">
+      <div class="container position-relative">
+        <h1>Destinations</h1>
+        <p>Discover amazing travel destinations in Calapan City</p>
+        <nav class="breadcrumbs">
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li class="current">Destinations</li>
+          </ol>
+        </nav>
+      </div>
+    </div><!-- End Page Title -->
+
+    <!-- Travel Destinations Section -->
+    <section id="travel-destinations" class="travel-destinations section">
+
+      <div class="container">
+
+        <div class="row justify-content-center">
+          <div class="col-lg-8 text-center">
+            <h2>Discover Amazing Travel Destinations in Calapan City</h2>
+            <p class="mb-5">From heritage museums to nature parks, from a quiet trek to Lamesang Bato to the colorful underwater world at Harka Piloto Fish Sanctuary, Calapan is a place that invites you to pause and explore.</p>
+          </div>
+        </div>
+
+        <div class="row gy-4 destination-grid">
+          <div class="col-lg-4 col-md-6">
+            <div class="destination-medium">
+              <div class="destination-overlay">
+                <img src="assets/img/travel/mahalta_resort.jpg" alt="Mahalta Resorts and Convention Center" class="img-fluid" loading="lazy">
+                <div class="overlay-content">
+                  <div class="badge-wrapper"><span class="destination-tag featured">Featured</span></div>
+                  <div class="content-wrapper">
+                    <h3>Mahalta Resorts and Convention Center</h3>
+                    <p class="destination-excerpt">Mahalta Resorts and Convention Center in Calapan offers family-friendly accommodations with air-conditioned rooms fea...</p>
+                    <div class="destination-info">
+                      <div class="info-item"><i class="bi bi-geo-alt"></i><span>Calapan City, Oriental Mindoro</span></div>
+                      <div class="price-tag">From ₱1,500.00</div>
+                    </div>
+                    <a href="destination-details.html?id=1" class="explore-btn"><span>Explore Now</span><i class="bi bi-arrow-right"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="destination-medium">
+              <div class="destination-overlay">
+                <img src="assets/img/travel/jollywave.jpg" alt="Jolly Waves Waterpark &amp; Resort" class="img-fluid" loading="lazy">
+                <div class="overlay-content">
+                  <div class="badge-wrapper"><span class="destination-tag featured">Featured</span></div>
+                  <div class="content-wrapper">
+                    <h3>Jolly Waves Waterpark &amp; Resort</h3>
+                    <p class="destination-excerpt">Jolly Waves Waterpark &amp; Resort in Calapan, Oriental Mindoro, is a vibrant water and adventure theme park featuring on...</p>
+                    <div class="destination-info">
+                      <div class="info-item"><i class="bi bi-geo-alt"></i><span>Calapan City, Oriental Mindoro</span></div>
+                      <div class="price-tag">From ₱350.00</div>
+                    </div>
+                    <a href="destination-details.html?id=2" class="explore-btn"><span>Explore Now</span><i class="bi bi-arrow-right"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="destination-medium">
+              <div class="destination-overlay">
+                <img src="assets/img/travel/fillipinia.jpg" alt="Filipiniana Hotel Calapan" class="img-fluid" loading="lazy">
+                <div class="overlay-content">
+                  <div class="badge-wrapper"><span class="destination-tag">Hotel</span></div>
+                  <div class="content-wrapper">
+                    <h3>Filipiniana Hotel Calapan</h3>
+                    <p class="destination-excerpt">Filipiniana Hotel Calapan is a family-friendly hotel offering comfortable air-conditioned rooms with Wi-Fi and modern...</p>
+                    <div class="destination-info">
+                      <div class="info-item"><i class="bi bi-geo-alt"></i><span>Calapan City, Oriental Mindoro</span></div>
+                      <div class="price-tag">From ₱2,200.00</div>
+                    </div>
+                    <a href="destination-details.html?id=3" class="explore-btn"><span>Explore Now</span><i class="bi bi-arrow-right"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="destination-medium">
+              <div class="destination-overlay">
+                <img src="assets/img/travel/cathedral.jpg" alt="Santo Niño Cathedral" class="img-fluid" loading="lazy">
+                <div class="overlay-content">
+                  <div class="badge-wrapper"><span class="destination-tag">Attraction</span></div>
+                  <div class="content-wrapper">
+                    <h3>Santo Niño Cathedral</h3>
+                    <p class="destination-excerpt">Santo Niño Cathedral, commonly known as Calapan Cathedral, is a Roman Catholic cathedral in Calapan, Oriental Mindoro...</p>
+                    <div class="destination-info">
+                      <div class="info-item"><i class="bi bi-geo-alt"></i><span>Calapan City, Oriental Mindoro</span></div>
+                      <div class="price-tag">Free entrance</div>
+                    </div>
+                    <a href="destination-details.html?id=4" class="explore-btn"><span>Explore Now</span><i class="bi bi-arrow-right"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="destination-medium">
+              <div class="destination-overlay">
+                <img src="assets/img/travel/vencios_garden.jpg" alt="Vencio&#x27;s Garden Hotel and Restaurant" class="img-fluid" loading="lazy">
+                <div class="overlay-content">
+                  <div class="badge-wrapper"><span class="destination-tag">Hotel</span></div>
+                  <div class="content-wrapper">
+                    <h3>Vencio&#x27;s Garden Hotel and Restaurant</h3>
+                    <p class="destination-excerpt">Vencio&#x27;s Garden Hotel and Restaurant has been a haven of comfort and Calapeño culinary delight in Oriental Mindoro fo...</p>
+                    <div class="destination-info">
+                      <div class="info-item"><i class="bi bi-geo-alt"></i><span>Calapan City, Oriental Mindoro</span></div>
+                      <div class="price-tag">From ₱1,800.00</div>
+                    </div>
+                    <a href="destination-details.html?id=5" class="explore-btn"><span>Explore Now</span><i class="bi bi-arrow-right"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="destination-medium">
+              <div class="destination-overlay">
+                <img src="assets/img/travel/donnyland.jpg" alt="Donny Land Beach Resort" class="img-fluid" loading="lazy">
+                <div class="overlay-content">
+                  <div class="badge-wrapper"><span class="destination-tag">Resort</span></div>
+                  <div class="content-wrapper">
+                    <h3>Donny Land Beach Resort</h3>
+                    <p class="destination-excerpt">Donnyland Beach Resort offers a beachfront accommodation option for those looking to stay near the sea. Guests mentio...</p>
+                    <div class="destination-info">
+                      <div class="info-item"><i class="bi bi-geo-alt"></i><span>Calapan City, Oriental Mindoro</span></div>
+                      <div class="price-tag">From ₱1,600.00</div>
+                    </div>
+                    <a href="destination-details.html?id=6" class="explore-btn"><span>Explore Now</span><i class="bi bi-arrow-right"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="destination-medium">
+              <div class="destination-overlay">
+                <img src="assets/img/travel/eduardos_resort.jpg" alt="Eduardo&#x27;s Resort" class="img-fluid" loading="lazy">
+                <div class="overlay-content">
+                  <div class="badge-wrapper"><span class="destination-tag">Resort</span></div>
+                  <div class="content-wrapper">
+                    <h3>Eduardo&#x27;s Resort</h3>
+                    <p class="destination-excerpt">A resort in Calapan City with a large swimming pool, ideal for family outings and group gatherings.</p>
+                    <div class="destination-info">
+                      <div class="info-item"><i class="bi bi-geo-alt"></i><span>Calapan City, Oriental Mindoro</span></div>
+                      <div class="price-tag">From ₱250.00</div>
+                    </div>
+                    <a href="destination-details.html?id=7" class="explore-btn"><span>Explore Now</span><i class="bi bi-arrow-right"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="destination-medium">
+              <div class="destination-overlay">
+                <img src="assets/img/travel/chippings.jpg" alt="Chippings" class="img-fluid" loading="lazy">
+                <div class="overlay-content">
+                  <div class="badge-wrapper"><span class="destination-tag">Restaurant</span></div>
+                  <div class="content-wrapper">
+                    <h3>Chippings</h3>
+                    <p class="destination-excerpt">A local eatery in Calapan City. Reserve a table ahead of time and pre-select your meal.</p>
+                    <div class="destination-info">
+                      <div class="info-item"><i class="bi bi-geo-alt"></i><span>Calapan City, Oriental Mindoro</span></div>
+                      <div class="price-tag">From ₱150.00</div>
+                    </div>
+                    <a href="destination-details.html?id=8" class="explore-btn"><span>Explore Now</span><i class="bi bi-arrow-right"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="destination-medium">
+              <div class="destination-overlay">
+                <img src="assets/img/travel/museum.jpg" alt="Calapan Heritage Museum" class="img-fluid" loading="lazy">
+                <div class="overlay-content">
+                  <div class="badge-wrapper"><span class="destination-tag">Attraction</span></div>
+                  <div class="content-wrapper">
+                    <h3>Calapan Heritage Museum</h3>
+                    <p class="destination-excerpt">Look back at the history of Calapan City and Oriental Mindoro through old photographs and displays.</p>
+                    <div class="destination-info">
+                      <div class="info-item"><i class="bi bi-geo-alt"></i><span>Calapan City, Oriental Mindoro</span></div>
+                      <div class="price-tag">From ₱50.00</div>
+                    </div>
+                    <a href="destination-details.html?id=9" class="explore-btn"><span>Explore Now</span><i class="bi bi-arrow-right"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="destination-medium">
+              <div class="destination-overlay">
+                <img src="assets/img/travel/park.jpg" alt="Calapan City Park" class="img-fluid" loading="lazy">
+                <div class="overlay-content">
+                  <div class="badge-wrapper"><span class="destination-tag">Attraction</span></div>
+                  <div class="content-wrapper">
+                    <h3>Calapan City Park</h3>
+                    <p class="destination-excerpt">A green city park with a monument of the tamaraw, a good place to relax and walk around.</p>
+                    <div class="destination-info">
+                      <div class="info-item"><i class="bi bi-geo-alt"></i><span>Calapan City, Oriental Mindoro</span></div>
+                      <div class="price-tag">Free entrance</div>
+                    </div>
+                    <a href="destination-details.html?id=10" class="explore-btn"><span>Explore Now</span><i class="bi bi-arrow-right"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="destination-medium">
+              <div class="destination-overlay">
+                <img src="assets/img/travel/pulo.jpg" alt="Pulo Island" class="img-fluid" loading="lazy">
+                <div class="overlay-content">
+                  <div class="badge-wrapper"><span class="destination-tag">Island</span></div>
+                  <div class="content-wrapper">
+                    <h3>Pulo Island</h3>
+                    <p class="destination-excerpt">A small island off Calapan with white sand and clear water, reached by outrigger boat.</p>
+                    <div class="destination-info">
+                      <div class="info-item"><i class="bi bi-geo-alt"></i><span>Calapan Bay, Oriental Mindoro</span></div>
+                      <div class="price-tag">From ₱500.00</div>
+                    </div>
+                    <a href="destination-details.html?id=11" class="explore-btn"><span>Explore Now</span><i class="bi bi-arrow-right"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="destination-medium">
+              <div class="destination-overlay">
+                <img src="assets/img/travel/escuba.jpg" alt="Escuba Sandbar" class="img-fluid" loading="lazy">
+                <div class="overlay-content">
+                  <div class="badge-wrapper"><span class="destination-tag">Island</span></div>
+                  <div class="content-wrapper">
+                    <h3>Escuba Sandbar</h3>
+                    <p class="destination-excerpt">A sandbar with clear turquoise water and forested shoreline, popular for swimming and photos.</p>
+                    <div class="destination-info">
+                      <div class="info-item"><i class="bi bi-geo-alt"></i><span>Calapan Bay, Oriental Mindoro</span></div>
+                      <div class="price-tag">From ₱500.00</div>
+                    </div>
+                    <a href="destination-details.html?id=12" class="explore-btn"><span>Explore Now</span><i class="bi bi-arrow-right"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row justify-content-center mt-5">
+          <div class="col-lg-6 text-center">
+            <div class="explore-more">
+              <h4>Ready to Start Your Journey?</h4>
+              <p class="mb-4">Book your next adventure in Calapan City and create unforgettable memories.</p>
+              <a href="register.html" id="cta-link" class="btn-explore"><span id="cta-text">Create Account to Book</span><i class="bi bi-arrow-right"></i></a>
+              <script>if (CT.currentUser()) { var a = document.getElementById("cta-link"); a.href = "my-bookings.html"; document.getElementById("cta-text").textContent = "View My Bookings"; }</script>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /Travel Destinations Section -->
+
+  </main>
+
+    <footer id="footer" class="footer position-relative dark-background">
+    <div class="container">
+      <div class="row gy-5">
+        <div class="col-lg-5">
+          <div class="footer-content">
+            <a href="index.html" class="logo d-flex align-items-center mb-4"><span class="sitename">Calapan Tourism</span></a>
+            <p class="mb-4">Discover the beauty of Calapan City, the capital of Oriental Mindoro. Explore destinations, plan your stay, and create unforgettable memories.</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-6">
+          <div class="footer-links">
+            <h4>Explore</h4>
+            <ul>
+              <li><a href="about.html"><i class="bi bi-chevron-right"></i> About</a></li>
+              <li><a href="destinations.html"><i class="bi bi-chevron-right"></i> Destinations</a></li>
+              <li><a href="gallery.html"><i class="bi bi-chevron-right"></i> Gallery</a></li>
+              <li><a href="blog.html"><i class="bi bi-chevron-right"></i> Help</a></li>
+              <li><a href="contact.html"><i class="bi bi-chevron-right"></i> Contact</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="footer-contact">
+            <h4>Get in Touch</h4>
+            <div class="contact-item"><div class="contact-icon"><i class="bi bi-geo-alt"></i></div><div class="contact-info"><p>Calapan City<br>Oriental Mindoro, Philippines</p></div></div>
+            <div class="contact-item"><div class="contact-icon"><i class="bi bi-telephone"></i></div><div class="contact-info"><p>(043) 123-4567</p></div></div>
+            <div class="contact-item"><div class="contact-icon"><i class="bi bi-envelope"></i></div><div class="contact-info"><p>info@calapantourism.com</p></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <div class="copyright text-center">
+          <p>© <span>Copyright</span> <strong class="px-1 sitename">Calapan Tourism</strong> <span>All Rights Reserved</span></p>
+        </div>
+        <div class="credits text-center">Template by <a href="https://bootstrapmade.com/">BootstrapMade</a></div>
+      </div>
+    </div>
+  </footer>
+
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <div id="preloader"></div>
+
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/js/main.js"></script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Gallery - Calapan Tourism</title>
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="https://fonts.googleapis.com" rel="preconnect"><link href="https://fonts.gstatic.com" rel="preconnect" crossorigin><link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Poppins:wght@300;400;500;600;700&family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/css/main.css" rel="stylesheet">
+  <script src="assets/js/app.js"></script>
+  <script src="assets/js/data.js"></script>
+  
+</head>
+<body class="index-page">
+
+
+    <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+      <a href="index.html" class="logo d-flex align-items-center">
+        <h1 class="sitename">Calapan Tourism</h1>
+      </a>
+      <nav id="navmenu" class="navmenu">
+        <ul>
+        <li><a href="index.html" class="">Home</a></li>
+        <li><a href="about.html" class="">About</a></li>
+        <li><a href="destinations.html" class="">Destinations</a></li>
+        <li><a href="gallery.html" class="active">Gallery</a></li>
+        <li><a href="blog.html" class="">Help</a></li>
+        <li><a href="contact.html" class="">Contact</a></li>
+          <li id="nav-auth"></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+    </div>
+  </header>
+  <script>CT.renderNav();</script>
+  <style>
+    .btn-login, .btn-register { padding: 8px 20px; font-weight: 600; }
+    .btn-login { color: #667eea; }
+    .btn-register { color: white; border: none; }
+    .navmenu a.active { color: #ff2a00ff; font-weight: 700; border-bottom: 2px solid #ff2a00ff; }
+  </style>
+
+
+  <main class="main">
+
+    <!-- Page Title -->
+    <div class="page-title dark-background" style="background-image: url(assets/img/travel/gallery.jpg)">
+      <div class="container position-relative">
+        <h1>Gallery</h1>
+        <p>Explore Calapan City through stunning images that capture its culture, nature, and vibrant local life.</p>
+        <nav class="breadcrumbs">
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li class="current">Gallery</li>
+          </ol>
+        </nav>
+      </div>
+    </div><!-- End Page Title -->
+
+    <!-- Gallery Slider Section -->
+    <section id="gallery-slider" class="gallery-slider section">
+
+      <div class="container">
+
+        <div class="gallery-container">
+          <div class="swiper init-swiper">
+            <script type="application/json" class="swiper-config">
+              {
+                "loop": true,
+                "speed": 800,
+                "autoplay": {
+                  "delay": 4000
+                },
+                "effect": "coverflow",
+                "grabCursor": true,
+                "centeredSlides": true,
+                "slidesPerView": "auto",
+                "coverflowEffect": {
+                  "rotate": 50,
+                  "stretch": 0,
+                  "depth": 100,
+                  "modifier": 1,
+                  "slideShadows": true
+                },
+                "pagination": {
+                  "el": ".swiper-pagination",
+                  "type": "bullets",
+                  "clickable": true
+                },
+                "navigation": {
+                  "nextEl": ".swiper-button-next",
+                  "prevEl": ".swiper-button-prev"
+                },
+                "breakpoints": {
+                  "320": {
+                    "slidesPerView": 1,
+                    "spaceBetween": 10
+                  },
+                  "768": {
+                    "slidesPerView": 2,
+                    "spaceBetween": 20
+                  },
+                  "1024": {
+                    "slidesPerView": 3,
+                    "spaceBetween": 30
+                  }
+                }
+              }
+            </script>
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="gallery-item">
+                  <div class="gallery-img">
+                    <a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/gallery3.jpg">
+                      <img src="assets/img/gallery/gallery3.jpg" class="img-fluid" alt="">
+                      <div class="gallery-overlay">
+                        <i class="bi bi-plus-circle"></i>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="gallery-item">
+                  <div class="gallery-img">
+                    <a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/gallery1.jpg">
+                      <img src="assets/img/gallery/gallery1.jpg" class="img-fluid" alt="">
+                      <div class="gallery-overlay">
+                        <i class="bi bi-plus-circle"></i>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="gallery-item">
+                  <div class="gallery-img">
+                    <a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/gallery5.jpg">
+                      <img src="assets/img/gallery/gallery5.jpg" class="img-fluid" alt="">
+                      <div class="gallery-overlay">
+                        <i class="bi bi-plus-circle"></i>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="gallery-item">
+                  <div class="gallery-img">
+                    <a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/gallery7.jpg">
+                      <img src="assets/img/gallery/gallery7.jpg" class="img-fluid" alt="">
+                      <div class="gallery-overlay">
+                        <i class="bi bi-plus-circle"></i>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="gallery-item">
+                  <div class="gallery-img">
+                    <a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/gallery2.jpg">
+                      <img src="assets/img/gallery/gallery2.jpg" class="img-fluid" alt="">
+                      <div class="gallery-overlay">
+                        <i class="bi bi-plus-circle"></i>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="gallery-item">
+                  <div class="gallery-img">
+                    <a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/gallery4.jpg">
+                      <img src="assets/img/gallery/gallery4.jpg" class="img-fluid" alt="">
+                      <div class="gallery-overlay">
+                        <i class="bi bi-plus-circle"></i>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="gallery-item">
+                  <div class="gallery-img">
+                    <a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/gallery6.jpg">
+                      <img src="assets/img/gallery/gallery6.jpg" class="img-fluid" alt="">
+                      <div class="gallery-overlay">
+                        <i class="bi bi-plus-circle"></i>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="gallery-item">
+                  <div class="gallery-img">
+                    <a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/gallery8.jpg">
+                      <img src="assets/img/gallery/gallery8.jpg" class="img-fluid" alt="">
+                      <div class="gallery-overlay">
+                        <i class="bi bi-plus-circle"></i>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /Gallery Slider Section -->
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery section">
+
+      <div class="container">
+
+        <div class="gallery-grid">
+          <div class="gallery-item">
+            <a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/gallery1.jpg">
+              <img src="assets/img/gallery/gallery1.jpg" class="img-fluid" alt="">
+              <div class="gallery-overlay">
+                <i class="bi bi-plus-lg"></i>
+              </div>
+            </a>
+          </div>
+
+          <div class="gallery-item featured">
+            <a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/gallery2.jpg">
+              <img src="assets/img/gallery/gallery2.jpg" class="img-fluid" alt="">
+              <div class="gallery-overlay">
+                <i class="bi bi-plus-lg"></i>
+              </div>
+            </a>
+          </div>
+
+          <div class="gallery-item">
+            <a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/gallery3.jpg">
+              <img src="assets/img/gallery/gallery3.jpg" class="img-fluid" alt="">
+              <div class="gallery-overlay">
+                <i class="bi bi-plus-lg"></i>
+              </div>
+            </a>
+          </div>
+
+          <div class="gallery-item">
+            <a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/gallery4.jpg">
+              <img src="assets/img/gallery/gallery4.jpg" class="img-fluid" alt="">
+              <div class="gallery-overlay">
+                <i class="bi bi-plus-lg"></i>
+              </div>
+            </a>
+          </div>
+
+          <div class="gallery-item">
+            <a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/gallery5.jpg">
+              <img src="assets/img/gallery/gallery5.jpg" class="img-fluid" alt="">
+              <div class="gallery-overlay">
+                <i class="bi bi-plus-lg"></i>
+              </div>
+            </a>
+          </div>
+
+          <div class="gallery-item">
+            <a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/gallery6.jpg">
+              <img src="assets/img/gallery/gallery6.jpg" class="img-fluid" alt="">
+              <div class="gallery-overlay">
+                <i class="bi bi-plus-lg"></i>
+              </div>
+            </a>
+          </div>
+
+          <div class="gallery-item featured">
+            <a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/gallery7.jpg">
+              <img src="assets/img/gallery/gallery7.jpg" class="img-fluid" alt="">
+              <div class="gallery-overlay">
+                <i class="bi bi-plus-lg"></i>
+              </div>
+            </a>
+          </div>
+
+          <div class="gallery-item">
+            <a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/gallery8.jpg">
+              <img src="assets/img/gallery/gallery8.jpg" class="img-fluid" alt="">
+              <div class="gallery-overlay">
+                <i class="bi bi-plus-lg"></i>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="text-center mt-5">
+          <a href="#" class="btn-view-more">View More <i class="bi bi-arrow-right"></i></a>
+        </div>
+
+      </div>
+
+    </section><!-- /Gallery Section -->
+
+  </main>
+
+    <footer id="footer" class="footer position-relative dark-background">
+    <div class="container">
+      <div class="row gy-5">
+        <div class="col-lg-5">
+          <div class="footer-content">
+            <a href="index.html" class="logo d-flex align-items-center mb-4"><span class="sitename">Calapan Tourism</span></a>
+            <p class="mb-4">Discover the beauty of Calapan City, the capital of Oriental Mindoro. Explore destinations, plan your stay, and create unforgettable memories.</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-6">
+          <div class="footer-links">
+            <h4>Explore</h4>
+            <ul>
+              <li><a href="about.html"><i class="bi bi-chevron-right"></i> About</a></li>
+              <li><a href="destinations.html"><i class="bi bi-chevron-right"></i> Destinations</a></li>
+              <li><a href="gallery.html"><i class="bi bi-chevron-right"></i> Gallery</a></li>
+              <li><a href="blog.html"><i class="bi bi-chevron-right"></i> Help</a></li>
+              <li><a href="contact.html"><i class="bi bi-chevron-right"></i> Contact</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="footer-contact">
+            <h4>Get in Touch</h4>
+            <div class="contact-item"><div class="contact-icon"><i class="bi bi-geo-alt"></i></div><div class="contact-info"><p>Calapan City<br>Oriental Mindoro, Philippines</p></div></div>
+            <div class="contact-item"><div class="contact-icon"><i class="bi bi-telephone"></i></div><div class="contact-info"><p>(043) 123-4567</p></div></div>
+            <div class="contact-item"><div class="contact-icon"><i class="bi bi-envelope"></i></div><div class="contact-info"><p>info@calapantourism.com</p></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <div class="copyright text-center">
+          <p>© <span>Copyright</span> <strong class="px-1 sitename">Calapan Tourism</strong> <span>All Rights Reserved</span></p>
+        </div>
+        <div class="credits text-center">Template by <a href="https://bootstrapmade.com/">BootstrapMade</a></div>
+      </div>
+    </div>
+  </footer>
+
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <div id="preloader"></div>
+
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/js/main.js"></script>
+
+
+
+</body>
+</html>

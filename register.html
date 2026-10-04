@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Register - Calapan Tourism</title>
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="https://fonts.googleapis.com" rel="preconnect"><link href="https://fonts.gstatic.com" rel="preconnect" crossorigin><link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Poppins:wght@300;400;500;600;700&family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/css/main.css" rel="stylesheet">
+  <script src="assets/js/app.js"></script>
+  
+  <style>
+        body {
+            background: linear-gradient(135deg, #ab3000ff 0%, #981d05ff 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 40px 20px;
+        }
+        .register-container {
+            max-width: 500px;
+            width: 100%;
+        }
+        .register-card {
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+            padding: 40px;
+        }
+        .register-header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .register-header h2 {
+            color: #333;
+            font-weight: 700;
+        }
+        .form-control:focus {
+            border-color: #667eea;
+            box-shadow: 0 0 0 0.2rem rgba(102, 126, 234, 0.25);
+        }
+        .btn-register {
+            background: linear-gradient(135deg, #ab3000ff 0%, #981d05ff 100%);
+            border: none;
+            color: white;
+            padding: 12px;
+            font-weight: 600;
+            width: 100%;
+        }
+        .btn-register:hover {
+            opacity: 0.9;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="register-container">
+        <div class="register-card">
+            <div class="register-header">
+                <h2>Create Account</h2>
+                <p class="text-muted">Join Calapan Tourism today</p>
+            </div>
+            <div id="msg" class="alert d-none"></div>
+            <form id="regForm">
+                <div class="mb-3"><label for="full_name" class="form-label">Full Name</label><input type="text" class="form-control" id="full_name" required></div>
+                <div class="mb-3"><label for="username" class="form-label">Username</label><input type="text" class="form-control" id="username" required></div>
+                <div class="mb-3"><label for="email" class="form-label">Email Address</label><input type="email" class="form-control" id="email" required></div>
+                <div class="mb-3"><label for="phone" class="form-label">Phone Number</label><input type="text" class="form-control" id="phone"></div>
+                <div class="mb-3"><label for="password" class="form-label">Password</label><input type="password" class="form-control" id="password" required></div>
+                <div class="mb-3"><label for="confirm_password" class="form-label">Confirm Password</label><input type="password" class="form-control" id="confirm_password" required></div>
+                <button type="submit" class="btn btn-register">Create Account</button>
+            </form>
+            <div class="text-center mt-3">
+                <p class="mb-0">Already have an account? <a href="login.html">Sign in</a></p>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.getElementById("regForm").addEventListener("submit", function (e) {
+            e.preventDefault();
+            var g = function (id) { return document.getElementById(id).value; };
+            var r = CT.register({ full_name: g("full_name"), username: g("username"), email: g("email"), phone: g("phone"), password: g("password"), confirm: g("confirm_password") });
+            var m = document.getElementById("msg");
+            m.className = "alert " + (r.ok ? "alert-success" : "alert-danger");
+            m.textContent = r.msg;
+            if (r.ok) { e.target.reset(); setTimeout(function () { location.href = "login.html"; }, 1200); }
+        });
+    </script>
+</body>
+</html>
